@@ -1,0 +1,146 @@
+.contentHome {
+  display: flex;
+  flex-direction: column;
+  width: 832px;
+  background-color: #202024;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .contentHome {
+    width: 700px;
+  }
+}
+
+.contentHome header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.contentHome header img {
+  height: 50px;
+  width: 50px;
+}
+
+.contentHome span {
+  color: #8d8d99;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30rem;
+}
+
+.profile strong {
+  margin-top: -1rem;
+  color: #e1e1e6;
+  font-size: 16px;
+}
+
+.profile span {
+  margin-top: -1rem;
+  color: #8d8d99;
+  font-size: 14px;
+}
+
+.content {
+  margin-top: -2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content p {
+  padding: 1rem;
+  font-size: 16px;
+  color: #c4c4cc;
+}
+
+.content a {
+  padding: 1rem;
+  color: #00b37e;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.content span {
+  padding: 1rem;
+  inline-size: none;
+  color: #00b37e;
+  font-size: 16px;
+}
+
+.contentHome span hr {
+  margin-left: 2.5rem;
+  width: 752px;
+  border: 1px solid #323238;
+}
+
+.feedback {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback span {
+  font-weight: bold;
+  color: #e1e1e6;
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.feedback textarea {
+  background-color: #121214;
+  color: #c4c4cc;
+  width: 752px;
+  height: 96px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 16px;
+  resize: none;
+  line-height: 2;
+}
+
+.feedback button[type="submit"] {
+  width: 108px;
+  height: 49px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #00875f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.feedback button:not(:disabled):hover {
+  background-color: #00b37e;
+}
+
+.feedback button[type="submit"]:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.feedback footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.feedback:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.commentList {
+  margin-top: 2rem;
+}
